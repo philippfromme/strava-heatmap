@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "all": "npm run build && npm run deploy",
     "start": "NODE_ENV=development webpack-dev-server --open --mode development",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tmcw/togeojson": "4.1.0",
